@@ -1,0 +1,1 @@
+Some sort of challenge setup on a vulnerable Raspberry Pi.  Have some electronics hooked up to it.  Then tell them if they can gain access and then do something with the electronics (suppy python script?) then they win the Pi.
