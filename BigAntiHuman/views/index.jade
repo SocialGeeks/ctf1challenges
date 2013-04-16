@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h2 Prove you are a robot.
+    p Provide the answer. You have #{timeout} miliseconds.
+    p #{val1} + #{val2}
+    form(method='post')
+        input(type='text',name='val3')
+        input(type='submit',value='Send Answer')
