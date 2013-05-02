@@ -1,0 +1,9 @@
+[Unit]
+Description=Big Anti-Human Captcha
+
+[Service]
+WorkingDirectory=/home/ctfuser/BigAntiHuman
+ExecStart=/usr/bin/sudo -u ctfuser /usr/bin/node app.js
+
+[Install]
+WantedBy=multi-user.target
