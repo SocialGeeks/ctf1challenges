@@ -28,5 +28,5 @@ app.all ('/:control?/:action?/:id?',
 		else ctrl[c][a][m](req,res);
 	});
 
-app.listen(3000);
+app.listen(3001);
 
