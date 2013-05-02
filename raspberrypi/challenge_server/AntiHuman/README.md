@@ -6,10 +6,10 @@ This is a simple time sensitive math question. The user has 500 miliseconds to s
 ### System Packages
 * Nodejs
 
-### Install with node package manager..
+### Install with node package manager..  
 
-        npm install express
-        npm install jade
+	npm install express  
+	npm install jade  
 
 ### Systemd  
 
