@@ -6,16 +6,16 @@ This is a simple time sensitive math question using large values. The user has 5
 ### System Packages
 * Nodejs  
 
-### Install with node package manager.
+### Install with node package manager.  
 
 	npm install express  
 	npm install jade  
 
 ### Systemd  
 	useradd -d /home/ctfuser -m -s /sbin/nologin ctfuser  
-        cp systemd/bigantihuman.service /usr/lib/systemd/system/  
-        systemctl enable bigantihuman.service  
-        systemctl start bigantihuman  
+	cp systemd/bigantihuman.service /usr/lib/systemd/system/  
+	systemctl enable bigantihuman.service  
+	systemctl start bigantihuman  
 
 ## Other files
 
