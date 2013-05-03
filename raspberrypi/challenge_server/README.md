@@ -53,8 +53,10 @@ As root immediately after flashing with http://archlinuxarm.org/platforms/armv6/
 
 	useradd -d /home/ctfuser -m -s /sbin/nologin ctfuser 
 
-* Copy files from https://github.com/SocialGeeks/challenges/tree/master/raspberrypi/challenge_server/AntiHuman to /home/ctfuser/AntiHuman  
-* Copy files from https://github.com/SocialGeeks/challenges/tree/master/raspberrypi/challenge_server/BigAntiHuman to /home/ctfuser/BigAntiHuman  
+### Copy challenge files to /home/ctfuser
+
+	cp -r challenges/raspberrypi/challenge_server/AntiHuman /home/ctfuser/  
+	cp -r challenges/raspberrypi/challenge_server/BigAntiHuman /home/ctfuser/  
 
 ### Update permissions  
 
@@ -101,8 +103,12 @@ As root immediately after flashing with http://archlinuxarm.org/platforms/armv6/
 
 ### Systemd scripts  
 
+	cp challenges/raspberrypi/kippo/startkipp /home/kippo/  
 	cp challenges/raspberrypi/kippo/systemd/kippo.service /usr/lib/systemd/system/ 
 	systemctl enable kippo.service  
 	systemctl start kippo  
 
+### Update permissions  
 	
+	chown -R kippo:kippo /home/kippo/  	
+
