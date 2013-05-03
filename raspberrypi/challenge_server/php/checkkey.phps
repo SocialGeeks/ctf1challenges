@@ -10,5 +10,5 @@ else {
 }
 ?>
 
-<p><a href="index.phps">View Source</a></p>
+<p><a href="checkkey.phps">View Source</a></p>
 
