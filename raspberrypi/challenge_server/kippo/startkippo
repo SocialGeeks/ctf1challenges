@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cd /home/kippo/kippo/kippo-0.8
+source ../bin/activate
+/home/kippo/kippo/bin/python2 /home/kippo/kippo/bin/twistd -y kippo.tac -l log/kippo.log --pidfile kippo.pid -n

@@ -1,0 +1,10 @@
+[Unit]
+Description=Kippo Honeypot
+
+[Service]
+User=kippo
+Group=kippo
+ExecStart=/home/kippo/startkippo
+
+[Install]
+WantedBy=multi-user.target

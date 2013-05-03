@@ -62,10 +62,47 @@ As root immediately after flashing with http://archlinuxarm.org/platforms/armv6/
 
 ### Systemd scripts  
  
-	cp systemd/antihuman.service /usr/lib/systemd/system/  
-	cp systemd/bigantihuman.service /usr/lib/systemd/system/
+	cp challenges/raspberrypi/AntiHuman/systemd/antihuman.service /usr/lib/systemd/system/  
+	cp challenges/raspberrypi/BigAntiHuman/systemd/bigantihuman.service /usr/lib/systemd/system/
 	systemctl enable antihuman.service  
 	systemctl enable bigantihuman.service  
 	systemctl start antihuman 
 	systemctl start bigantihuman  
 
+
+## Install Kippo honeypot  
+### Add kippo unprivileged user  
+
+	useradd -d /home/kippo -m -s /usr/bin/bash kippo
+
+### Setup Python virtualenv for kippo  
+
+	su - kippo  
+	cd /home/kippo  
+	mkdir kippo  
+	virtualenv-2.7 kippo  
+	cd kippo  
+	source bin/activate  
+	pip install twisted  
+	pip install pycrypto  
+	pip install pyasn1  
+
+### Setup kippo in virtualenv  
+
+	su - kippo  
+	cd /home/kippo/kippo-0.8
+	wget https://kippo.googlecode.com/files/kippo-0.8.tar.gz  
+	tar xf kippo-0.8.tar.gz  
+	rm kippo-0.8.tar.gz  
+
+
+* Add dummy password values to /home/kippo/kippo/kippo-0.8/data/userdb.txt  
+** http://www.zdnet.com/top-25-common-attackable-passwords-stop-using-ninja-and-jesus-7000006373/  
+
+### Systemd scripts  
+
+	cp challenges/raspberrypi/kippo/systemd/kippo.service /usr/lib/systemd/system/ 
+	systemctl enable kippo.service  
+	systemctl start kippo  
+
+	
