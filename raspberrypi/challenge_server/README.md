@@ -2,6 +2,10 @@
 
 As root immediately after flashing with http://archlinuxarm.org/platforms/armv6/raspberry-pi  
 
+## Change root password to something long and random  
+
+	passwd  
+
 ## Update system and go do something else for a while  
 
 	pacman -Syu  
