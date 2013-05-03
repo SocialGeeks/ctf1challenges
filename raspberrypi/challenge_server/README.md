@@ -25,7 +25,7 @@ As root immediately after flashing with http://archlinuxarm.org/platforms/armv6/
 
 ## Some developer/comfort tools  
 
-	pacman -S sudo vim nmap nc git base-devel  
+	pacman -S sudo vim nmap netcat git base-devel  
 
 ## PHP Challenges  
 
