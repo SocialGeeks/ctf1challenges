@@ -2,8 +2,10 @@
 Description=Anti-Human Captcha
 
 [Service]
+User=ctfuser
+Group=ctfuser
 WorkingDirectory=/home/ctfuser/AntiHuman
-ExecStart=/usr/bin/sudo -u ctfuser /usr/bin/node app.js
+ExecStart=/usr/bin/node app.js
 
 [Install]
 WantedBy=multi-user.target
