@@ -62,10 +62,12 @@ As root immediately after flashing with http://archlinuxarm.org/platforms/armv6/
 	sudo cp -p /usr/lib/{libreadline.so.x,libncursesw.so.x,libdl.so.x,libgcc_s.so.x,libc.so.x} /lib/ld-linux.so.x /sandbox/lib
 	sudo ln /sandbox/lib/{libreadline.so.x,libncursesw.so.x,libdl.so.x,libgcc_s.so.x,libc.so.x} /sandbox/usr/lib/
 
+## Add Rbash to shell list
+* Add /bin/rbash to /etc/shells
+
 ## Lockdown SSH and configure SSH Sandbox
 * Uncomment Protocal 2
 * Set PasswordAuthentication no
-* set UsePAM no
 * Add the following to the bottom
 	Match Group sandbox
 	  PasswordAuthentication yes
