@@ -78,7 +78,7 @@ As root immediately after flashing with http://archlinuxarm.org/platforms/armv6/
 
 	sudo systemctl restart sshd
 
-## Add the key to the direcotry
+## Add the key to the directory
 
 	sudo su
 	cat >> /sandbox/home/hacker/secret << EOF
@@ -97,4 +97,3 @@ As root immediately after flashing with http://archlinuxarm.org/platforms/armv6/
 	export PATH=$PATH:/home/hacker
 	EOF
 	exit
-
