@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-targ="http://192.168.99.100:3000"
+targ="http://localhost:3000"
 equ=$(curl -c "cookie.txt" $targ 2>/dev/null | cut -d'>' -f18 | cut -d'<' -f1)
 
 top=$[ ${equ:0:12} + ${equ:27:12} ]
