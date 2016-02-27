@@ -1,0 +1,16 @@
+{
+  "name": "antihuman",
+  "version": "1.0.0",
+  "description": "This is a simple time sensitive math question. The user has 500 miliseconds to send the correct answer to random addition questions.  The ideas was lifted in almost its entirety from the 2013 HackYou CTF PPC100 challenge.  http://www.hacksonville.com/2012/hackyou-ctf-ppc100-hugecaptcha/",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^3.21.2",
+    "jade": "^1.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
