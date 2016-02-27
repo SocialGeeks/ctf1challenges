@@ -1,3 +1,21 @@
+# NOTICE
+This challenge has been moved to docker and can be ran by simply building and
+running the container. There is a issue with the librarys for rbash and
+automating the install to the chroot environment.  If you recieve an error such
+as _File /bin/rbash not found_ then you need to update the liraries.
+
+See the section _Add shared libs required by rbash_ for information about how
+to install the libraries.
+
+The details on the manual install for the raspi is left included for the sake
+of documentation.
+
+## To run
+```bash
+docker build -t darkarc .
+docker run -p 2200:22 -tid darkarc
+```
+
 # RaspberryPi In the Dark (rbash) Server
 
 As root immediately after flashing with http://archlinuxarm.org/platforms/armv6/raspberry-pi  
