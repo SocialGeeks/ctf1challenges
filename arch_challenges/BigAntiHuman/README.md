@@ -1,15 +1,27 @@
 # Big Anti-Human Captcha - Robot Liberation
 
-This is a simple time sensitive math question using large values. The user has 500 miliseconds to send the correct answer to random addition questions. The ideas was lifted in almost its entirety from the 2013 HackYou CTF PPC100 challenge.  http://www.hacksonville.com/2012/hackyou-ctf-ppc100-hugecaptcha/
+This is a __simple__ time sensitive math question using large values. The user has 500 miliseconds to send the correct answer to random addition questions. The ideas was lifted in almost its entirety from the 2013 HackYou CTF PPC100 challenge.  http://www.hacksonville.com/2012/hackyou-ctf-ppc100-hugecaptcha/
 
-## Dependencies
+## Run Dockerized
+
+Simple...
+
+```bash
+docker build -t bigantihuman .
+docker run -tid -p 3000:3000 bigantihuman
+
+# To test
+./local.sh
+```
+
+## Run Locally
+
 ### System Packages
 * Nodejs  
 
 ### Install with node package manager.  
 
-	npm install express  
-	npm install jade  
+	npm install 
 
 ### Systemd  
 	useradd -d /home/ctfuser -m -s /sbin/nologin ctfuser  
