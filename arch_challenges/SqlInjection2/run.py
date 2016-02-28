@@ -4,8 +4,6 @@ from mysql import connector
 
 app = Flask(__name__)
 
-
-KEY="UnionAllTheThings"
 DB = {
     'user': 'haypp_hxar',
     'password': 'dtIwRdKa0T22zoPngQyl7Cf5gcgYPC',
