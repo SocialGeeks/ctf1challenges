@@ -3,7 +3,7 @@ USE oroneisone;
 CREATE TABLE users(
     id INTEGER,
     Username VARCHAR(30),
-    Password VARCHAR(30)
+    Password VARCHAR(64)
 );
 
 CREATE TABLE products(
