@@ -22,11 +22,15 @@ def check_db(u, p):
         sql.execute(
             "SELECT id from users where uname='{}' and passw='{}'".format(u, p)
         )
+
+        for _id in sql:
+            return True
     except:
         return False
 
-    for _id in sql:
-        return True
+    finally:
+        if cnx:
+            cnx.close()
 
     return False
 
