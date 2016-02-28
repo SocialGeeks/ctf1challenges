@@ -2,8 +2,8 @@ CREATE DATABASE oroneisone;
 USE oroneisone;
 CREATE TABLE users(
     id INTEGER,
-    uname VARCHAR(30),
-    passw VARCHAR(30)
+    Username VARCHAR(30),
+    Password VARCHAR(30)
 );
 
 CREATE TABLE products(
@@ -29,7 +29,7 @@ INSERT INTO products (id, name, ppm) VALUES
 (14, 'Mercury',   85.0),
 (15, 'Bismuth',   8.5);
 
-INSERT INTO users (id, uname, passw) VALUES
+INSERT INTO users (id, Username, Password) VALUES
 (1, 'admin', 'cNfy8i17ca2zOpqYzM9aHnxLysVrrz'),
 (2, 'superuser', 'KEY: uitwnstTVTozBrQ8LFvKin8nYlBXgi'),
 (3, 'user', '8VV1KvUzlo9rdioH7DmyRhcBl4ODxL');
